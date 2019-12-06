@@ -34,8 +34,8 @@ class EventModal extends Component {
     const itemNodes = items.map((item, index) => {
       const { title, description, url } = item;
       return (
-        <div>
-          <Row gutter={[2, 0]} key={`$[title}-${index}`}>
+        <div key={`${title}-${index}`}>
+          <Row gutter={[2, 0]}>
             <Col span={10}>
               <Title level={4}>{title}</Title>
               <div>{description}</div>
